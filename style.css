@@ -164,7 +164,7 @@ body {
 }
 
 .img__item_1 {
-    background: url(img/угадайчисло.png);
+    background: url(img/Обложка\ карточки.svg);
 }
 
 .img__item_2 {
@@ -235,12 +235,23 @@ body {
 
 .preview-game {
   margin-top: 32px;
+  height: 500px;
   display: flex;
   border-radius: 30px;
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
   justify-content: space-between;
 }
+
+.preview-game1 {
+  margin-top: 32px;
+  height: 500px;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+
 .preview-game__text {
   padding: 48px;
   display: flex;
@@ -248,6 +259,14 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
+
+.preview-game__text1 {
+  position: relative;
+  left: 48px;
+
+  top: 48px;
+}
+
 .preview-game__title {
   color: rgb(32, 32, 39);
   font-family: inherit;
@@ -259,7 +278,7 @@ body {
 .preview-game__description {
   color: rgb(32, 32, 39);
   font-family: inherit;
-  font-size: 24px;
+
   font-weight: 400;
   line-height: 32px;
   text-align: left;
@@ -375,7 +394,7 @@ body {
         display: flex;
         flex-direction: column-reverse;
       }
-      .preview-game--right {
+      .review-game--right {
         flex-direction: column;
       }
       .preview-game__text {
