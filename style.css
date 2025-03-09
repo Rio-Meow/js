@@ -229,43 +229,32 @@ body {
 }
 .minigame__conteiner {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  gap: 32px;
 }
 
 .preview-game {
-  margin-top: 32px;
   height: 500px;
   display: flex;
   border-radius: 30px;
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
   justify-content: space-between;
+
 }
 
-.preview-game1 {
-  margin-top: 32px;
-  height: 500px;
-  display: flex;
-  border-radius: 30px;
-  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
-  background: rgb(255, 255, 255);
+.preview-game4{
+  justify-content: flex-start;
 }
-
 .preview-game__text {
   padding: 48px;
+  font-size: 24px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.preview-game__text1 {
-  position: relative;
-  left: 48px;
-
-  top: 48px;
-}
 
 .preview-game__title {
   color: rgb(32, 32, 39);
@@ -278,7 +267,6 @@ body {
 .preview-game__description {
   color: rgb(32, 32, 39);
   font-family: inherit;
-
   font-weight: 400;
   line-height: 32px;
   text-align: left;
@@ -303,8 +291,9 @@ body {
   color: rgb(32, 32, 39);
 }
 .preview-game__img {
-  max-width: 600px;
-  max-height: 500px;
+  width: 600px;
+  height: 500px;
+  flex-shrink: 0;
   border-radius: 30px;
 }
 
@@ -381,6 +370,7 @@ body {
       }
       .minigame {
         padding-top: 48px;
+        padding-bottom: 48px;
       }
       .minigame__title {
         padding-bottom: 48px;
@@ -394,7 +384,7 @@ body {
         display: flex;
         flex-direction: column-reverse;
       }
-      .review-game--right {
+      .preview-game--right {
         flex-direction: column;
       }
       .preview-game__text {
@@ -410,7 +400,8 @@ body {
       }
       .preview-game__img {
         height: 285px;
-        width: auto;
+        width: 343px;
+        
       }
       .preview-game__button {
         width: 285px;
