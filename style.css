@@ -198,7 +198,9 @@ body {
 }
 
 .fon__star {
-  position: absolute;
+  background-image: url(./img/Star11.png), url(./img/Star12.png), url(./img/Star11.png), url(./img/Star12.png);
+  background-repeat: no-repeat;
+  background-position: calc(90% + 23px) 96px, calc(90% + 91px) 115px, calc(90% + 56px) 3372px, calc(84% + 212px) 3336px;
 }
 .fon__star_topm {
   left: 1340px;
