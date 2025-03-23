@@ -1,2 +1,5 @@
-console.log("Привет");
-console.log("Привет");
+let i = 0;
+while (i < 2) {
+  console.log("Привет");
+  i++;
+}
