@@ -164,7 +164,7 @@ body {
 }
 
 .card__item_1 {
-    background: url(img/Обложка\ карточки.svg);
+    background: url(img/Oblozhka_kartochki.svg);
 }
 
 .card__item_2 {
@@ -314,7 +314,7 @@ body {
     .distance {
       margin-left: 30px;
     }
-    .section__title {
+    .distance__title {
       width: 262px;
       padding-top: 147px;
       font-size: 40px;
@@ -323,7 +323,7 @@ body {
       line-height: 49px;
       font-family: Montserrat;
     }
-    .section__description {
+    .distance__description {
       width: 296px;
       font-size: 16px;
       line-height: 20px;
@@ -363,7 +363,7 @@ body {
         line-height: 49px;
         margin-bottom: 0px;
       }
-      .preview-game {
+      .card {
         position: relative;
         height: auto;
         display: flex;
