@@ -22,7 +22,7 @@ body {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
-.section__title{
+.distance__title{
     font-size: 64px;
     padding-top: 196px;
     max-width: 769px;
@@ -31,7 +31,7 @@ body {
     width: 769px;
 }
 
-.section__description{
+.distance__description{
     font-size: 24px;
     padding-top: 24px;
     padding-bottom: 48px;
@@ -110,7 +110,7 @@ body {
     padding-bottom:72px;
 }
 
-.product__games{
+.games__container__games{
     max-height: 1060px;
     max-width: 1200px;
     display: grid;
@@ -120,7 +120,7 @@ body {
     align-items: start;
 }
 
-.img__card {
+.card {
     display: flex;
     flex-direction: column;
     grid-column: span 4;
@@ -133,12 +133,12 @@ body {
     margin-top: -40px;
 }
 
-.img__item {
+.card__img {
     border-radius: 30px;
     height: 314px;
 }
 
-.img__number {
+.card__number {
     width: 111px;
     height: 36px;
     color: rgb(32, 32, 39);
@@ -154,7 +154,7 @@ body {
     margin-bottom: 16px;
 }
 
-.img__text {
+.card__text {
     color: rgb(32, 32, 39);
     font-size: 32px;
     font-weight: 700;
@@ -163,27 +163,27 @@ body {
     max-width: 372px;
 }
 
-.img__item_1 {
-    background: url(img/Обложка\ карточки.svg);
+.card__item_1 {
+    background: url(img/Oblozhka_kartochki.svg);
 }
 
-.img__item_2 {
+.card__item_2 {
     background: url(img/простаяарифметика.png);
 }
 
-.img__item_3 {
+.card__item_3 {
     background: url(img/перевернитекст.png);
 }
 
-.img__item_4 {
+.card__item_4 {
     background: url(img/камень.png);
 }
 
-.img__item_5 {
+.card__item_5 {
     background: url(img/викторина.png);
 }
 
-.img__item_6 {
+.card__item_6 {
     background: url(img/генератор.png);
 }
 
@@ -198,26 +198,11 @@ body {
 }
 
 .fon__star {
-  position: absolute;
+  background-image: url(./img/Star11.png), url(./img/Star12.png), url(./img/Star11.png), url(./img/Star12.png);
+  background-repeat: no-repeat;
+  background-position: calc(90% + 23px) 96px, calc(90% + 91px) 115px, calc(90% + 56px) 3372px, calc(84% + 212px) 3336px;
 }
-.fon__star_topm {
-  left: 1340px;
-  top: 93px;
-  transform: rotate(deg);
-}
-.fon__star_topl {
-  left: 1370px;
-  top: 130px;
-  transform: rotate(deg);
-}
-.fon__star_butm {
-  left: 1340px;
-  bottom: 65px;
-}
-.fon__star_butl {
-  left: 1370px;
-  bottom: 80px;
-}
+
 .minigame__title {
   color: rgb(255, 255, 255);
   font-family: inherit;
@@ -225,7 +210,7 @@ body {
   font-weight: 700;
   line-height: 78px;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 72px;
 }
 .minigame__conteiner {
   display: flex;
@@ -329,7 +314,7 @@ body {
     .distance {
       margin-left: 30px;
     }
-    .section__title {
+    .distance__title {
       width: 262px;
       padding-top: 147px;
       font-size: 40px;
@@ -338,7 +323,7 @@ body {
       line-height: 49px;
       font-family: Montserrat;
     }
-    .section__description {
+    .distance__description {
       width: 296px;
       font-size: 16px;
       line-height: 20px;
@@ -378,7 +363,7 @@ body {
         line-height: 49px;
         margin-bottom: 0px;
       }
-      .preview-game {
+      .card {
         position: relative;
         height: auto;
         display: flex;
