@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="play.js"></script>
     <title>Homework1</title>
 </head>
 <body>
@@ -20,7 +19,7 @@
             Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
             </div>
         </section>
-        <form action="#play">
+        <form action="#play" class="form__button">
             <button class="header__button" type="submit" style="text-decoration: none; color: #ffffff;">Поехали</button>
           </form>
     </header>
@@ -81,7 +80,7 @@
                     <div class="preview-game__text">
                         <h3 class="preview-game__title">Угадай число</h3>
                         <p class="preview-game__description">Попробуй угадать случайное <br>число от 1 до 100.</p>
-                        <button class="preview-game__button">Играть!</button>
+                        <button id="play1" class="preview-game__button">Играть!</button>
                     </div>
                     <img class="preview-game__img" src="./img/Oblozhka_kartochki.svg" alt="Угадай число">
                 </article>
@@ -132,5 +131,6 @@
             <h2 class="footer__title">ВСЕ ПРАВА ЗАЩИЩЕНЫ</h2>
         </footer>    
     </main>
+    <script src="play.js"></script>
 </body>
 </html>
