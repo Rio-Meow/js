@@ -329,21 +329,15 @@ body {
       line-height: 20px;
       text-align: center;
     }
-
-    .form__button{
-      display: flex; 
-      justify-content: center;
-      align-items: center;
-    }
-
     .header__button {
       width: 285px;
       height: 55px;
       font-size: 16px;
       font-weight: 600;
       line-height: 141.69%;
+      text-align: center;
       pointer-events: none;
-
+      margin-left: 30px;
     }
     .banner {
       height: 51px;
