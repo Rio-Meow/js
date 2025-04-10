@@ -129,6 +129,11 @@ body {
     text-decoration: none;
 }
 
+.card:hover{
+  transform: scale(1.05);
+  transition: 1.1s;
+}
+
 .img__card_top {
     margin-top: -40px;
 }
@@ -375,6 +380,17 @@ body {
         display: flex;
         flex-direction: column-reverse;
       }
+
+      .preview-game{
+        flex-direction: column;
+        height: auto;
+      }
+
+      .preview-game--left{
+        flex-direction: column-reverse;
+      }
+
+
       .preview-game--right {
         flex-direction: column;
       }
