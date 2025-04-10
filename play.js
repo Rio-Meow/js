@@ -151,40 +151,40 @@ document.addEventListener('DOMContentLoaded', function() {
         alert(`Викторина завершена! Вы ответили правильно на ${correctAnswersCount} из ${quiz.length} вопросов.`);
     }
 
-    function rockPaperScissors() {
-        const choices = ["камень", "ножницы", "бумага"];
-        const userChoice = prompt("Выберите: камень, ножницы или бумага?");
+function rockPaperScissors() {
+    const choices = ["камень", "ножницы", "бумага"];
+    const userChoice = prompt("Выберите: камень, ножницы или бумага?");
 
-        if (userChoice === null) {
-            alert("Игра отменена.");
-            return;
-        }
-
-        const userChoiceLower = userChoice.toLowerCase();
-
-        if (!choices.includes(userChoiceLower)) {
-            alert("Некорректный выбор. Пожалуйста, выберите: камень, ножницы или бумага.");
-            return;
-        }
-
-        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-
-        let result;
-
-        if (userChoiceLower === computerChoice) {
-            result = "Ничья!";
-        } else if (
-            (userChoiceLower === "камень" && computerChoice === "ножницы") 
-            (userChoiceLower === "ножницы" && computerChoice === "бумага") 
-            (userChoiceLower === "бумага" && computerChoice === "камень")
-        ) {
-            result = "Вы победили!";
-        } else {
-            result = "Вы проиграли!";
-        }
-
-        alert(`Ваш выбор: ${userChoiceLower}\nВыбор компьютера: ${computerChoice}\nРезультат: ${result}`);
+    if (userChoice === null) {
+        alert("Игра отменена.");
+        return;
     }
+
+    const userChoiceLower = userChoice.toLowerCase();
+
+    if (!choices.includes(userChoiceLower)) {
+        alert("Некорректный выбор. Пожалуйста, выберите: камень, ножницы или бумага.");
+        return;
+    }
+
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+    let result;
+
+    if (userChoiceLower === computerChoice) {
+        result = "Ничья!";
+    } else if (
+        (userChoiceLower === "камень" && computerChoice === "ножницы") || // Использовали || (ИЛИ), а не && (И) между этими условиями
+        (userChoiceLower === "ножницы" && computerChoice === "бумага") || // Использовали || (ИЛИ), а не && (И) между этими условиями
+        (userChoiceLower === "бумага" && computerChoice === "камень")
+    ) {
+        result = "Вы победили!";
+    } else {
+        result = "Вы проиграли!";
+    }
+
+    alert(`Ваш выбор: ${userChoiceLower}\nВыбор компьютера: ${computerChoice}\nРезультат: ${result}`);
+}
 
 
     const play1Button = document.getElementById("play1");
