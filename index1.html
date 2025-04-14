@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Practice - All Tasks</title>
+    <style>
+        /* Add some basic styling for better readability */
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="task1">
+        <h2>Задание 1: Скрытие и показ текста</h2>
+        <h1 id="myHeading">Привет, мир!</h1>
+        <button id="toggleButton">Скрыть</button>
+    </section>
+
+    <section id="task2">
+        <h2>Задание 2: Изменение стиля элемента</h2>
+        <p id="myParagraph">Это абзац текста.</p>
+        <button id="colorButton">Изменить цвет</button>
+    </section>
+
+    <section id="task3">
+        <h2>Задание 3: Динамическое изменение текста</h2>
+        <h1 id="changeHeading">Исходный текст</h1>
+        <button id="changeTextButton">Изменить текст</button>
+    </section>
+
+    <section id="task4">
+        <h2>Задание 4: Поиск и изменение элементов по классу</h2>
+        <div class="description">Описание 1</div>
+        <div class="description">Описание 2</div>
+        <div class="description">Описание 3</div>
+    </section>
+
+    <section id="task5">
+        <h2>Задание 5: Работа с querySelectorAll</h2>
+        <p class="description">Описание 1</p>
+        <p>Простой абзац</p>
+        <p class="description">Описание 2</p>
+        <p>Еще один простой абзац</p>
+        <p class="description">Описание 3</p>
+    </section>
+
+    <section id="task6">
+        <h2>Задание 6: Добавление нового элемента в DOM</h2>
+        <button id="addButton">Добавить элемент</button>
+    </section>
+
+    <script>
+        // Task 1
+        const heading = document.querySelector("#myHeading");
+        const toggleButton = document.querySelector("#toggleButton");
+
+        toggleButton.addEventListener("click", function() {
+            if (heading.style.display === "none") {
+                heading.style.display = "block";
+                toggleButton.textContent = "Скрыть";
+            } else {
+                heading.style.display = "none";
+                toggleButton.textContent = "Показать";
+            }
+        });
+
+        // Task 2
+        const paragraph = document.querySelector("#myParagraph");
+        const colorButton = document.querySelector("#colorButton");
+
+        colorButton.addEventListener("click", function() {
+            paragraph.style.color = "blue";
+        });
+
+        // Task 3
+        const changeHeading = document.querySelector("#changeHeading");
+        const changeTextButton = document.querySelector("#changeTextButton");
+
+        changeTextButton.addEventListener("click", function() {
+            changeHeading.textContent = "Привет, мир!";
+        });
+
+        // Task 4
+        const descriptions4 = document.querySelectorAll(".description");
+
+        descriptions4.forEach(function(element) {
+            element.textContent = "Измененный текст";
+        });
+
+        // Task 5
+        const descriptions5 = document.querySelectorAll(".description");
+
+        descriptions5.forEach(function(element) {
+            element.textContent = "Новый текст";
+        });
+
+        // Task 6
+        const addButton = document.querySelector("#addButton");
+
+        addButton.addEventListener("click", function() {
+            const newParagraph = document.createElement("p");
+            newParagraph.textContent = "Новый абзац";
+            document.body.appendChild(newParagraph);
+        });
+    </script>
+
+</body>
+</html>

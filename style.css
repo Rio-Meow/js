@@ -382,8 +382,9 @@ body {
       }
 
       .preview-game{
-        flex-direction: column;
         height: auto;
+        width: 343px;
+        max-width: 100%;
       }
 
       .preview-game--left{
