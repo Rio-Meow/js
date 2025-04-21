@@ -1,4 +1,5 @@
 const arr2 = [1, 1, 1];
-arr2.push(...[2, 2, 2]);
+const arr3 = [2, 2, 2];
+arr2.push(...arr3); 
 
-console.log(arr2);
+console.log(arr2); 
