@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', function() {
 
     //  "Угадай число"
@@ -200,3 +201,27 @@ function rockPaperScissors() {
     play5Button.addEventListener("click", rockPaperScissors);
 
 });
+
+const dynamic1 = document.getElementById('dynamic1');
+const dynamic2 = document.getElementById('dynamic2');
+
+if (dynamic1 && dynamic2) {
+    const wrapperWidth = document.querySelector('.banner').offsetWidth;
+    const contentWidth = dynamic1.scrollWidth;
+    const scrollSpeed = 1;
+    let scrollAmount = 0;
+
+    function animateBanner() {
+        scrollAmount -= scrollSpeed;
+
+        if (scrollAmount < -contentWidth) {
+            scrollAmount += contentWidth;
+        }
+
+        dynamic1.style.transform = `translateX(${scrollAmount}px)`;
+        dynamic2.style.transform = `translateX(${scrollAmount}px)`;
+        requestAnimationFrame(animateBanner);
+    }
+
+    animateBanner();
+}
