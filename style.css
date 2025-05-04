@@ -22,6 +22,8 @@ body {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
+
+
 .distance__title{
     font-size: 64px;
     padding-top: 196px;
@@ -262,9 +264,11 @@ body {
   line-height: 32px;
   text-align: left;
   margin-top: 24px;
+  margin-bottom: 36px;
+  
+
 }
 .preview-game__button {
-  margin-top: 36px;
   padding: 16px 28px 16px 28px;
   border-radius: 60px;
   background: rgb(32, 32, 39);
@@ -304,7 +308,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1029px) {
     .center {
       padding-left: 16px;
       padding-right: 16px;
@@ -317,9 +321,11 @@ body {
       background-size: auto, 10%, 5%, 10%, 5%;
     }
 
-    .distance {
-      margin-left: 30px;
+    .distance{
+      display: grid;
+      place-items: center;
     }
+    
     .distance__title {
       width: 262px;
       padding-top: 147px;
@@ -368,6 +374,9 @@ body {
       .minigame {
         padding-top: 48px;
         padding-bottom: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .minigame__title {
         padding-bottom: 48px;
