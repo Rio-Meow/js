@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск и изменение абзацев по классу</title>
+</head>
+<body>
+
+    <p class="description">Абзац 1 с описанием.</p>
+    <p>Просто абзац.</p>
+    <p class="description">Абзац 2 с описанием.</p>
+    <p>Еще один абзац.</p>
+    <p class="description">Абзац 3 с описанием.</p>
+
+    <script>
+        const descriptions = document.querySelectorAll('.description');
+
+        descriptions.forEach(paragraph => {
+            paragraph.textContent = 'Новый текст';
+        });
+    </script>
+
+</body>
+</html>

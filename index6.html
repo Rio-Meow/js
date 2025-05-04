@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление элемента в конец документа</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #addButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4c7faf;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #addButton:hover {
+            background-color: #7c3661;
+        }
+
+        .newParagraph {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+            max-width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Добавление абзаца</h1>
+    <button id="addButton">Добавить элемент</button>
+
+    <script>
+        const button = document.querySelector('#addButton');
+
+        button.addEventListener('click', function() {
+            // 1. Создаем новый элемент <p>
+            const newParagraph = document.createElement('p');
+
+            // 2. Добавляем текст в новый элемент
+            newParagraph.textContent = 'Новый абзац';
+
+            // 3. Добавляем класс для стилизации
+            newParagraph.classList.add('newParagraph');
+
+            // 4. Добавляем новый элемент в конец <body>
+            document.body.appendChild(newParagraph);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скрытие и показ текста</title>
+    <style>
+        #toggleButton {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #af914c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Привет, мир!</h1>
+    <button id="toggleButton">Скрыть</button>
+
+    <script>
+        const heading = document.querySelector('h1');
+        const button = document.querySelector('#toggleButton');
+
+        button.addEventListener('click', function() {
+            if (heading.style.display === 'none') {
+                heading.style.display = 'block';
+                button.textContent = 'Скрыть';
+            } else {
+                heading.style.display = 'none';
+                button.textContent = 'Показать';
+            }
+        });
+    </script>
+
+</body>
+</html>
